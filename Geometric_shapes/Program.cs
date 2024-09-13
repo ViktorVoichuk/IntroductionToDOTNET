@@ -102,6 +102,33 @@ namespace Geometric_shapes
             }
             Console.WriteLine();
 
+            //Ромб 2
+            for (int i = 0; i < bufsize; i++)
+            {
+                for (int j = i; j < bufsize; j++) Console.Write(" "); Console.Write("/");
+                for (int j = 0; j < i; j++) Console.Write("  "); Console.Write("\\");
+                Console.WriteLine();
+            }
+            for (int i = 0; i < bufsize; i++)
+            {
+                for (int j = 0; j <= i; j++) Console.Write(" "); Console.Write("\\");
+                for (int j = i; j < bufsize - 1; j++) Console.Write("  "); Console.Write("/");
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            //Ромб 3
+            for (int i = 0; i < bufsize * 2; i++)
+            {
+                for (int j = 0; j < bufsize * 2; j++)
+                {
+                    if (i == j - bufsize || j == i - bufsize) Console.Write("\\");
+                    else if (i == bufsize - 1 - j || i - bufsize == bufsize * 2 - 1 - j) Console.Write("/");
+                    else Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+
             //квадрат +-
             for (int i = 0; i < size; i++)
             {
