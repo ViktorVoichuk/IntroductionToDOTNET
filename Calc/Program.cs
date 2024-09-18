@@ -12,7 +12,7 @@ namespace Calc
         {
             Console.Write("Введите выражение: ");
             string expression = Console.ReadLine();
-            
+
             String[] tokens = expression.Split('+', '-', '*', '/');// split разделяет по операндам, и возвращает строке без знаков которые принимает 
             //for (int i = 0; i < tokens.Length; i++)
             //{
@@ -21,13 +21,22 @@ namespace Calc
             //Console.WriteLine();
             double a = Convert.ToDouble(tokens[0]);
             double b = Convert.ToDouble(tokens[1]);
-            Console.Write(expression + " = ");
+            Console.Write(a + "+" + b);
+            switch (expression[expression.IndexOfAny(new char[] { '+', '-', '*', '/' })])
+            {
+                case '+': Console.Write($"={a + b}"); break;
+                case '-': Console.Write($"={a - b}"); break;
+                case '*': Console.Write($"={a * b}"); break;
+                case '/': Console.Write($"={a / b}"); break;
+                default: Console.WriteLine("Неверное действие "); break;
+            }
+            Console.WriteLine();
             //Метод Contains класса string определяет, содержит ли строка указанный символ или подстроку
-            if (expression.Contains("+")) Console.WriteLine(a + b);
-            else if (expression.Contains("-")) Console.WriteLine(a - b);
-            else if (expression.Contains("*")) Console.WriteLine(a * b);
-            else if (expression.Contains("/")) Console.WriteLine(a / b);
-            else Console.WriteLine("No operation");
+            //if (expression.Contains("+")) Console.WriteLine(a + b);
+            //else if (expression.Contains("-")) Console.WriteLine(a - b);
+            //else if (expression.Contains("*")) Console.WriteLine(a * b);
+            //else if (expression.Contains("/")) Console.WriteLine(a / b);
+            //else Console.WriteLine("No operation");
         }
     }
 }

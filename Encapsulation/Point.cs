@@ -45,9 +45,27 @@ namespace Encapsulation
 		{
 			this.y = y;
 		}*/
-
-        public double X { get; set; }   //Автосвойства для 'X'
-        public double Y { get; set; }   //Автоствойства для 'Y'
+        double x;
+        double y;
+        public double X 
+        {   get { return x; }
+            set
+            {
+                if (value > 700) value = 700;
+                if (value < 0) value = 0;
+                x = value;
+            } 
+        }   //Автосвойства для 'X'
+        public double Y 
+        {
+            get { return y; }
+            set
+            {
+                if (value > 700) value = 700;
+                if (value < 0) value = 0;
+                y = value;
+            }
+        }   //Автоствойства для 'Y'
 
         //			  Constructors:
         public Point(double x = 0, double y = 0)
@@ -98,6 +116,14 @@ namespace Encapsulation
         }
 
         //				Methods:
+        public double Distance(Point other)
+        {
+            return Math.Sqrt(Math.Pow(this.x - other.x, 2) + Math.Pow(this.y - other.y, 2));//Pov(основание,степень)
+        }
+        public static double Distance(Point first, Point second)
+        {
+            return first.Distance(second);
+        }
         public void Print()
         {
             Console.WriteLine($"X = {X}, Y = {Y};");

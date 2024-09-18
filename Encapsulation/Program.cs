@@ -46,7 +46,7 @@ namespace Encapsulation
 			E = new Point(B);
 			E.Print(); 
 #endif
-            Point A = new Point(2, 3);
+            Point A = new Point(800, 3);
             Point B = new Point(7, 8);
             Point C = new Point(A + B);
             C.Print();
@@ -55,6 +55,10 @@ namespace Encapsulation
 			{
 				i.Print();
 			}
-        }
+			A.Print();
+
+			Console.WriteLine("Дистанция = "+A.Distance(B));
+			Console.WriteLine("Дистанция = " + Point.Distance(A,B));
+		}
     }
 }
