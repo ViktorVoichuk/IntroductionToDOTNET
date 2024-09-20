@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fraction", "Fraction\Fraction.csproj", "{149304B4-0D95-45E0-A6E4-12259F3EF985}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy", "Academy\Academy.csproj", "{E3D21445-7FF2-4BEB-A4F9-910016386C3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{149304B4-0D95-45E0-A6E4-12259F3EF985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{149304B4-0D95-45E0-A6E4-12259F3EF985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{149304B4-0D95-45E0-A6E4-12259F3EF985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
