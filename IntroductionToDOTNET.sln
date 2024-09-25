@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fraction", "Fraction\Fracti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academy", "Academy\Academy.csproj", "{E3D21445-7FF2-4BEB-A4F9-910016386C3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractGeometry", "AbstractGeometry\AbstractGeometry.csproj", "{F009F759-C04D-4FC9-84CC-218EF66FC2D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3D21445-7FF2-4BEB-A4F9-910016386C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F009F759-C04D-4FC9-84CC-218EF66FC2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F009F759-C04D-4FC9-84CC-218EF66FC2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F009F759-C04D-4FC9-84CC-218EF66FC2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F009F759-C04D-4FC9-84CC-218EF66FC2D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
